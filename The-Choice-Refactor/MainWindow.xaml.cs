@@ -3,6 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.IO;
 using The_Choice_Refactor.Classes;
+using The_Choice_Refactor.Pages.MainPages;
 
 namespace The_Choice_Refactor
 {
@@ -19,6 +20,8 @@ namespace The_Choice_Refactor
             ApiHelper.InitializeClient();                                                                               // init http client to work with apis
             config = JsonConvert.DeserializeObject<Config>(File.ReadAllText(@"..\..\..\UserData\Configuration.json"));  // load configuration from json-file
             WindowState = WindowState.Maximized;
+            currentPage = new MainPage();
+            PageFrame_Frm.Navigate(currentPage);
         }
     }
 }
