@@ -9,8 +9,36 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Pictures\BackgroundDark.jpg" />
+    <None Remove="Resources\Pictures\Icons\AboutUsIcon.png" />
+    <None Remove="Resources\Pictures\Icons\Favourite.png" />
+    <None Remove="Resources\Pictures\Icons\MainIcon.png" />
+    <None Remove="Resources\Pictures\Icons\Options.png" />
+    <None Remove="Resources\Pictures\Icons\Search.png" />
+    <None Remove="Resources\Pictures\Icons\TutorIcon.png" />
+    <None Remove="Resources\Pictures\Icons\Unfavorite.png" />
+    <None Remove="Resources\Pictures\Logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.9" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Pictures\BackgroundDark.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Pictures\Icons\AboutUsIcon.png" />
+    <Resource Include="Resources\Pictures\Icons\Favourite.png" />
+    <Resource Include="Resources\Pictures\Icons\MainIcon.png" />
+    <Resource Include="Resources\Pictures\Icons\Options.png" />
+    <Resource Include="Resources\Pictures\Icons\Search.png" />
+    <Resource Include="Resources\Pictures\Icons\TutorIcon.png" />
+    <Resource Include="Resources\Pictures\Icons\Unfavorite.png" />
+    <Resource Include="Resources\Pictures\Logo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties userdata_4configuration_1json__JsonSchema="https://beaujs.com/schema.json" /></VisualStudio></ProjectExtensions>

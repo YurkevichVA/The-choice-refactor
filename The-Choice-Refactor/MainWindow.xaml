@@ -5,11 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:The_Choice_Refactor"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="1080" Width="1920">
     <Window.Resources>
-        <ResourceDictionary Source="\Resources\Styles\Styles.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="\Resources\Styles\Styles.xaml"></ResourceDictionary>
     </Window.Resources>
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="\Resources\Pictures\BackgroundDark.jpg"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -38,7 +41,7 @@
                 x:Name="Logo" 
                 Source="\Resources\Pictures\Logo.png"/>
         </Button>
-        <Button 
+        <Button
             x:Name="CryptoPage_Btn" 
             Grid.Column="2" 
             Grid.Row="0"
@@ -48,12 +51,12 @@
             Grid.Column="3" 
             Grid.Row="0"
             Content="Currencies"/>
-        <Button 
+        <Button Template="{DynamicResource ButtonTemplate}" 
             x:Name="MetalPage_Btn" 
             Grid.Column="4" 
             Grid.Row="0"
             Content="Metals"/>
-        <Button 
+        <Button Template="{DynamicResource ButtonTemplate}" 
             x:Name="SharePage_Btn" 
             Grid.Column="5" 
             Grid.Row="0"
@@ -64,6 +67,7 @@
             Grid.Row="0">
             <Image
                 x:Name="OptionsIcon"
+                Width="50"
                 Source="\Resources\Pictures\Icons\Options.png"/>
         </Button>
         <Frame 

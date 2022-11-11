@@ -47,3 +47,4 @@ C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Re
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\The-Choice-Refactor.genruntimeconfig.cache
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\ref\The-Choice-Refactor.dll
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Resources\Styles\Styles.baml
+C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\App.baml
