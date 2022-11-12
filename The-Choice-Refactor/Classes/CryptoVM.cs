@@ -12,13 +12,13 @@ namespace The_Choice_Refactor.Classes
     {
         public ObservableCollection<CryptoModel> cryptoes { get; set; } // all cryptoes collection
         private CryptoModel? selected;                                   // selected crypto
-        public CryptoModel? SelectedCrypto
+        public CryptoModel? Selected
         {
             get { return selected; }
             set
             {
                 selected = value;
-                OnPropertyChanged("SelectedCrypto");
+                OnPropertyChanged("Selected");
             }
         }
         public CryptoVM()

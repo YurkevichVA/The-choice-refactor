@@ -21,7 +21,7 @@
             BorderThickness="0" 
             Grid.Column="0" 
             ItemsSource="{Binding cryptoes}" 
-            SelectedItem="{Binding SelectedCrypto}" 
+            SelectedItem="{Binding Selected}" 
             Background="Transparent" 
             SelectionChanged="Crypto_LstBx_SelectionChanged">
             <ListBox.ItemTemplate>

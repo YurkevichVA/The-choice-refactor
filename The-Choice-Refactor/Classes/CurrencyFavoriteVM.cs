@@ -5,12 +5,14 @@ using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.IO;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace The_Choice_Refactor.Classes
 {
-    public class CurrencyVM : INotifyPropertyChanged
+    public class CurrencyFavoriteVM
     {
-        public ObservableCollection<CurrencyModel> currencies { get; set; }   // all currencies collection
+        public ObservableCollection<CurrencyModel> currencies { get; set; }   // favorite currencies collection
         private CurrencyModel? selected;                                      // selected currency
         public CurrencyModel? Selected
         {
@@ -21,7 +23,7 @@ namespace The_Choice_Refactor.Classes
                 OnPropertyChanged("Selected");
             }
         }
-        public CurrencyVM()
+        public CurrencyFavoriteVM()
         {
             currencies = new ObservableCollection<CurrencyModel>();
             Load();
@@ -41,6 +43,7 @@ namespace The_Choice_Refactor.Classes
 
                 if (favoritesIDs.Contains(res.Key))
                     currency.isFavorite = true;
+                else continue;
 
                 currency.name = res.Key;
                 currency.price = res.Value;
