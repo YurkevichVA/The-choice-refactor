@@ -17,7 +17,11 @@
     <None Remove="Resources\Pictures\Icons\Search.png" />
     <None Remove="Resources\Pictures\Icons\TutorIcon.png" />
     <None Remove="Resources\Pictures\Icons\Unfavorite.png" />
+    <None Remove="Resources\Pictures\LeftArrow.png" />
+    <None Remove="Resources\Pictures\LetsGoButtonDark.png" />
+    <None Remove="Resources\Pictures\LinesBackgroundDark.png" />
     <None Remove="Resources\Pictures\Logo.png" />
+    <None Remove="Resources\Pictures\RigthArrow.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -36,9 +40,17 @@
     <Resource Include="Resources\Pictures\Icons\Search.png" />
     <Resource Include="Resources\Pictures\Icons\TutorIcon.png" />
     <Resource Include="Resources\Pictures\Icons\Unfavorite.png" />
+    <Resource Include="Resources\Pictures\LeftArrow.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Pictures\LetsGoButtonDark.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Pictures\LinesBackgroundDark.png" />
     <Resource Include="Resources\Pictures\Logo.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\Pictures\RigthArrow.png" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties userdata_4configuration_1json__JsonSchema="https://beaujs.com/schema.json" /></VisualStudio></ProjectExtensions>
