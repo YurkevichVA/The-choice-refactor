@@ -20,9 +20,11 @@
     <None Remove="Resources\Pictures\Icons\TutorIcon.png" />
     <None Remove="Resources\Pictures\Icons\Unfavorite.png" />
     <None Remove="Resources\Pictures\LeftArrow.png" />
+    <None Remove="Resources\Pictures\LeftArrowWhite.png" />
     <None Remove="Resources\Pictures\LetsGoButtonDark.png" />
     <None Remove="Resources\Pictures\LinesBackgroundDark.png" />
     <None Remove="Resources\Pictures\Logo.png" />
+    <None Remove="Resources\Pictures\RightArrowWhite.png" />
     <None Remove="Resources\Pictures\RigthArrow.png" />
   </ItemGroup>
 
@@ -47,6 +49,7 @@
     <Resource Include="Resources\Pictures\LeftArrow.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\Pictures\LeftArrowWhite.png" />
     <Resource Include="Resources\Pictures\LetsGoButtonDark.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -54,6 +57,7 @@
     <Resource Include="Resources\Pictures\Logo.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\Pictures\RightArrowWhite.png" />
     <Resource Include="Resources\Pictures\RigthArrow.png" />
   </ItemGroup>
 
