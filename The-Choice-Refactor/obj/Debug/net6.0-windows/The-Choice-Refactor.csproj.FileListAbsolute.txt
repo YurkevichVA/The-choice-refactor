@@ -48,3 +48,11 @@ C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Re
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\App.baml
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\OptionsPages\MainOptionsPage.g.cs
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\OptionsPages\MainOptionsPage.baml
+C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\ListBoxPages\CryptoListPage.g.cs
+C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\ListBoxPages\CurrencyListPage.g.cs
+C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\ListBoxPages\MetalListPage.g.cs
+C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\ListBoxPages\ShareListPage.g.cs
+C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\ListBoxPages\CryptoListPage.baml
+C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\ListBoxPages\CurrencyListPage.baml
+C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\ListBoxPages\MetalListPage.baml
+C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\ListBoxPages\ShareListPage.baml

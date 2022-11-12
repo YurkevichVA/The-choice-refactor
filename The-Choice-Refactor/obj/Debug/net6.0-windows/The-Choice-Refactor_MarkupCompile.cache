@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\App.xaml
-111296939657
+15-958799324
 
-262022639126
+31-1136543575
 197-525787772
-MainWindow.xaml;OptionsWindow.xaml;Pages\MainPages\CryptoPage.xaml;Pages\MainPages\CurrencyPage.xaml;Pages\MainPages\MainPage.xaml;Pages\MainPages\MetalPage.xaml;Pages\MainPages\SharePage.xaml;Pages\OptionsPages\AboutUsPage.xaml;Pages\OptionsPages\MainOptionsPage.xaml;Pages\OptionsPages\TutorialPage.xaml;Resources\Styles\Styles.xaml;
+MainWindow.xaml;OptionsWindow.xaml;Pages\ListBoxPages\CryptoListPage.xaml;Pages\ListBoxPages\CurrencyListPage.xaml;Pages\ListBoxPages\MetalListPage.xaml;Pages\ListBoxPages\ShareListPage.xaml;Pages\MainPages\CryptoPage.xaml;Pages\MainPages\CurrencyPage.xaml;Pages\MainPages\MainPage.xaml;Pages\MainPages\MetalPage.xaml;Pages\MainPages\SharePage.xaml;Pages\OptionsPages\AboutUsPage.xaml;Pages\OptionsPages\MainOptionsPage.xaml;Pages\OptionsPages\TutorialPage.xaml;Resources\Styles\Styles.xaml;
 
 False
 

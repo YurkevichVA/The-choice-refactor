@@ -6,6 +6,12 @@
         <Setter Property="Foreground"
                 Value="White"/>
     </Style>
+    <Style TargetType="TextBlock" x:Key="TextBlock_Style">
+        <Setter Property="FontFamily" 
+                Value="SF UI Display"/>
+        <Setter Property="Foreground" 
+                Value="White"/>
+    </Style>
     <Style TargetType="Button">
         <Setter Property="Background"
                 Value="Transparent">
@@ -39,6 +45,28 @@
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsChecked" Value="True">
                             <Setter TargetName="checkboxImage" Property="Source" Value="..\Pictures\DarkOn.png"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type CheckBox}" x:Key="favoriteTemplate">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image 
+                            x:Name="checkboxImage" 
+                            Source="..\Pictures\Icons\Unfavorite.png"/>
+                        <ContentPresenter/>
+                    </StackPanel>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter 
+                                TargetName="checkboxImage" 
+                                Property="Source"
+                                Value="..\Pictures\Icons\Favourite.png"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

@@ -10,6 +10,18 @@
     <Compile Update="OptionsWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\ListBoxPages\CryptoListPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\ListBoxPages\CurrencyListPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\ListBoxPages\MetalListPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\ListBoxPages\ShareListPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\MainPages\CryptoPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -40,6 +52,18 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="OptionsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ListBoxPages\CryptoListPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ListBoxPages\CurrencyListPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ListBoxPages\MetalListPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ListBoxPages\ShareListPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\MainPages\CryptoPage.xaml">
