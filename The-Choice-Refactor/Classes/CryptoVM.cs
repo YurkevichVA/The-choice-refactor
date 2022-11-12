@@ -5,17 +5,14 @@ using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.IO;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 
 namespace The_Choice_Refactor.Classes
 {
     public class CryptoVM: INotifyPropertyChanged
     {
         public ObservableCollection<CryptoModel> cryptoes { get; set; } // all cryptoes collection
-        private CryptoModel selected;                                   // selected crypto
-        public CryptoModel SelectedCrypto
+        private CryptoModel? selected;                                   // selected crypto
+        public CryptoModel? SelectedCrypto
         {
             get { return selected; }
             set
