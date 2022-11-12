@@ -84,12 +84,12 @@
                 VerticalAlignment="Bottom"
                 Click="SharePage_Btn_Click"/>
         <Button 
-            x:Name="Settings_Btn" 
+            x:Name="Options_Btn" 
             Grid.Column="12" 
             Grid.Row="0"
             VerticalAlignment="Center"
             Margin="25,0"
-            Click="Settings_Btn_Click">
+            Click="Options_Btn_Click">
             <Image
                 x:Name="OptionsIcon"
                 Width="30"

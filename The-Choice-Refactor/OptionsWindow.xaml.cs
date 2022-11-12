@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using The_Choice_Refactor.Classes;
+using The_Choice_Refactor.Pages.OptionsPages;
 
 namespace The_Choice_Refactor
 {
@@ -19,9 +21,32 @@ namespace The_Choice_Refactor
     /// </summary>
     public partial class OptionsWindow : Window
     {
-        public OptionsWindow()
+        private Config config;      // application configuration (theme, language, currency)
+        private Page currentPage;   // page that showed in frame at the moment
+        public OptionsWindow(Config config)
         {
             InitializeComponent();
+            this.config = config;
+            currentPage = new MainOptionsPage();        // create MainOptionsPage and set to current page
+            OptionsFrame_Frm.Navigate(currentPage);     // navigate frame to current page
+        }
+
+        private void MainOptions_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            currentPage = new MainOptionsPage();        // create MainOptionsPage and set to current page
+            OptionsFrame_Frm.Navigate(currentPage);     // navigate frame to current page
+        }
+
+        private void Tutorial_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            currentPage = new TutorialPage();           // create TutorialPage and set to current page
+            OptionsFrame_Frm.Navigate(currentPage);     // navigate frame to current page
+        }
+
+        private void AboutUs_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            currentPage = new AboutUsPage();            // create AboutUsPage and set to current page
+            OptionsFrame_Frm.Navigate(currentPage);     // navigate frame to current page
         }
     }
 }

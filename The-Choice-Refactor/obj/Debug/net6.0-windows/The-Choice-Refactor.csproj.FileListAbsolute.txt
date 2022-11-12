@@ -16,7 +16,6 @@ C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Re
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\MainPages\MetalPage.g.cs
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\MainPages\SharePage.g.cs
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\OptionsPages\AboutUsPage.g.cs
-C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\OptionsPages\MainSettingsPage.g.cs
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\OptionsPages\TutorialPage.g.cs
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\The-Choice-Refactor_MarkupCompile.cache
@@ -29,7 +28,6 @@ C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Re
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\MainPages\MetalPage.baml
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\MainPages\SharePage.baml
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\OptionsPages\AboutUsPage.baml
-C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\OptionsPages\MainSettingsPage.baml
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\OptionsPages\TutorialPage.baml
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\The-Choice-Refactor.g.resources
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\The_Choice_Refactor.Resources.Localizations.Localization.ENG.resources
@@ -48,3 +46,5 @@ C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Re
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\ref\The-Choice-Refactor.dll
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Resources\Styles\Styles.baml
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\App.baml
+C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\OptionsPages\MainOptionsPage.g.cs
+C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\OptionsPages\MainOptionsPage.baml

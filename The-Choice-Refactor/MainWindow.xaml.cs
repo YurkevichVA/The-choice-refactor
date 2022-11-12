@@ -50,9 +50,10 @@ namespace The_Choice_Refactor
             // to implement
         }
 
-        private void Settings_Btn_Click(object sender, RoutedEventArgs e)
+        private void Options_Btn_Click(object sender, RoutedEventArgs e)
         {
-            // to implement
+            OptionsWindow options = new OptionsWindow(config);
+            options.ShowDialog();
         }
     }
 }

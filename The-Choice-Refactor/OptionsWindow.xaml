@@ -5,8 +5,96 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:The_Choice_Refactor"
         mc:Ignorable="d"
-        Title="OptionsWindow" Height="450" Width="800">
+        Title="OptionsWindow" Height="600" Width="1000">
+    <Window.Resources>
+        <ResourceDictionary Source="\Resources\Styles\Styles.xaml"></ResourceDictionary>
+    </Window.Resources>
     <Grid>
-        
+        <StackPanel Height="600" Width="1000" Background="#0e1122">
+            <Grid Height="600" Width="1000">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30*"/>
+                    <RowDefinition Height="550*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="180*"/>
+                    <ColumnDefinition Width="550*"/>
+                    <ColumnDefinition Width="10*"/>
+                </Grid.ColumnDefinitions>
+                <Border
+                    Height="500"
+                    Width="200"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Left">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="10*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="200*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30*"/>
+                            <RowDefinition Height="50*"/>
+                            <RowDefinition Height="50*"/>
+                            <RowDefinition Height="50*"/>
+                            <RowDefinition Height="100*"/>
+                            <RowDefinition Height="100*"/>
+                            <RowDefinition Height="100*"/>
+                            <RowDefinition Height="100*"/>
+                        </Grid.RowDefinitions>
+                        <Border 
+                            Background="White" 
+                            Opacity="0.05"
+                            CornerRadius="30"
+                            Grid.ColumnSpan="2" 
+                            Grid.RowSpan="10" 
+                            Grid.Column="1" 
+                            IsEnabled="False"/>
+                        <Button 
+                            x:Name="MainOptions_Btn"
+                            Content="Main"
+                            Grid.Row="1"
+                            Grid.Column="2"
+                            FontSize="15"
+                            HorizontalAlignment="Left"
+                            Click="MainOptions_Btn_Click"/>
+                        <Button
+                            x:Name="Tutorial_Btn"
+                            Content="Tutorial"
+                            Grid.Row="2"
+                            Grid.Column="2"
+                            FontSize="15"
+                            HorizontalAlignment="Left"
+                            Click="Tutorial_Btn_Click"/>
+                        <Button
+                            x:Name="AboutUs_Btn"
+                            Content="About Us"
+                            Grid.Row="3"
+                            Grid.Column="2"
+                            FontSize="15"
+                            HorizontalAlignment="Left"
+                            Click="AboutUs_Btn_Click"/>
+                        <Image
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Height="19"
+                            Source="\..\..\Resources\Pictures\Icons\MainIcon.png"/>
+                        <Image
+                            Grid.Row="2"
+                            Grid.Column="1"
+                            Height="19"
+                            Source="\..\..\Resources\Pictures\Icons\TutorIcon.png"/>
+                        <Image
+                            Grid.Row="3"
+                            Grid.Column="1"
+                            Height="19"
+                            Source="\..\..\Resources\Pictures\Icons\AboutUsIcon.png"/>
+                    </Grid>
+                </Border>
+            </Grid>
+        </StackPanel>
     </Grid>
 </Window>

@@ -18,9 +18,9 @@ namespace The_Choice_Refactor.Pages.OptionsPages
     /// <summary>
     /// Interaction logic for MainSettingsPage.xaml
     /// </summary>
-    public partial class MainSettingsPage : Page
+    public partial class MainOptionsPage : Page
     {
-        public MainSettingsPage()
+        public MainOptionsPage()
         {
             InitializeComponent();
         }
