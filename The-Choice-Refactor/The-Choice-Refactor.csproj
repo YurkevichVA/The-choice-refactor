@@ -24,8 +24,8 @@
     <None Remove="Resources\Pictures\LetsGoButtonDark.png" />
     <None Remove="Resources\Pictures\LinesBackgroundDark.png" />
     <None Remove="Resources\Pictures\Logo.png" />
+    <None Remove="Resources\Pictures\RightArrow.png" />
     <None Remove="Resources\Pictures\RightArrowWhite.png" />
-    <None Remove="Resources\Pictures\RigthArrow.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -58,7 +58,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Pictures\RightArrowWhite.png" />
-    <Resource Include="Resources\Pictures\RigthArrow.png" />
+    <Resource Include="Resources\Pictures\RightArrow.png" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties userdata_4configuration_1json__JsonSchema="https://beaujs.com/schema.json" /></VisualStudio></ProjectExtensions>

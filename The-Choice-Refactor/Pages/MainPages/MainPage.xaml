@@ -62,7 +62,7 @@
             </Grid.RowDefinitions>
             <Button x:Name="LetsGo_Btn" Grid.Row="1" VerticalAlignment="Center" Content="Lets go!" Height="120" Width="250" BorderThickness="0" FontSize="20" Foreground="White">
                 <Button.Background>
-                    <ImageBrush ImageSource="\..\..\Resources\Pictures\LetsGoButtonDark.png"/>
+                    <ImageBrush ImageSource="..\..\Resources\Pictures\LetsGoButtonDark.png"/>
                 </Button.Background>
             </Button>
         </Grid>
@@ -95,10 +95,10 @@
                 <Button Opacity="0"/>
             </Border>
             <Button x:Name="LeftArrow_Btn" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="20" Height="30" BorderThickness="0" Background="Transparent">
-                <Image x:Name="LeftArrow_Img" Source="\..\..\Resources\Pictures\LeftArrow.png"/>
+                <Image x:Name="LeftArrow_Img" Source="..\..\Resources\Pictures\LeftArrow.png"/>
             </Button>
             <Button x:Name="RightArrow_Btn" BorderBrush="Transparent" BorderThickness="0" Grid.Row="0" Grid.Column="6" HorizontalAlignment="Right" VerticalAlignment="Center" Width="20" Height="30" Background="Transparent">
-                <Image x:Name="RightArrow_Img" Source="\..\..\Resources\Pictures\RightArrow.png"/>
+                <Image x:Name="RightArrow_Img" Source="..\..\Resources\Pictures\RightArrow.png"/>
             </Button>
         </Grid>
     </Grid>

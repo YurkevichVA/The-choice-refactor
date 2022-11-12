@@ -8,14 +8,14 @@
         Title="MainWindow" Height="1080" Width="1920"
         >
     <Window.Background>
-        <ImageBrush ImageSource="\Resources\Pictures\BackgroundDark.jpg"/>
+        <ImageBrush ImageSource="Resources\Pictures\BackgroundDark.jpg"/>
     </Window.Background>
     <Window.Resources>
-        <ResourceDictionary Source="\Resources\Styles\Styles.xaml"></ResourceDictionary>
+        <ResourceDictionary Source="Resources\Styles\Styles.xaml"></ResourceDictionary>
     </Window.Resources>
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="\Resources\Pictures\LinesBackgroundDark.png"/>
+            <ImageBrush ImageSource="Resources\Pictures\LinesBackgroundDark.png"/>
         </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>
@@ -48,7 +48,7 @@
             Click="MainPage_Btn_Click">
             <Image 
                 x:Name="Logo" 
-                Source="\Resources\Pictures\Logo.png"/>
+                Source="Resources\Pictures\Logo.png"/>
         </Button>
             <Button
                 x:Name="CryptoPage_Btn" 
@@ -93,7 +93,7 @@
             <Image
                 x:Name="OptionsIcon"
                 Width="30"
-                Source="\Resources\Pictures\Icons\Options.png"/>
+                Source="Resources\Pictures\Icons\Options.png"/>
         </Button>
         <Frame 
             x:Name="PageFrame_Frm" 
