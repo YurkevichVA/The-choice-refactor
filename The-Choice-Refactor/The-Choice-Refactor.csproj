@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <None Remove="Resources\Pictures\BackgroundDark.jpg" />
+    <None Remove="Resources\Pictures\DarkOff.png" />
+    <None Remove="Resources\Pictures\DarkOn.png" />
     <None Remove="Resources\Pictures\Icons\AboutUsIcon.png" />
     <None Remove="Resources\Pictures\Icons\Favourite.png" />
     <None Remove="Resources\Pictures\Icons\MainIcon.png" />
@@ -33,6 +35,8 @@
     <Resource Include="Resources\Pictures\BackgroundDark.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\Pictures\DarkOff.png" />
+    <Resource Include="Resources\Pictures\DarkOn.png" />
     <Resource Include="Resources\Pictures\Icons\AboutUsIcon.png" />
     <Resource Include="Resources\Pictures\Icons\Favourite.png" />
     <Resource Include="Resources\Pictures\Icons\MainIcon.png" />

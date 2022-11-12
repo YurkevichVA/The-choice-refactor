@@ -94,6 +94,13 @@
                             Source="\..\..\Resources\Pictures\Icons\AboutUsIcon.png"/>
                     </Grid>
                 </Border>
+                <Frame 
+                    x:Name="OptionsFrame_Frm"
+                    Grid.Column="2"
+                    Grid.Row="1"
+                    Grid.RowSpan="2"
+                    NavigationUIVisibility="Hidden"
+                    HorizontalAlignment="Left"/>
             </Grid>
         </StackPanel>
     </Grid>

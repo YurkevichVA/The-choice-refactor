@@ -24,5 +24,15 @@ namespace The_Choice_Refactor.Pages.OptionsPages
         {
             InitializeComponent();
         }
+
+        private void themeSwitch_ChBx_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void themeSwitch_ChBx_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -26,6 +26,7 @@ namespace The_Choice_Refactor
         public OptionsWindow(Config config)
         {
             InitializeComponent();
+            ResizeMode = ResizeMode.NoResize;      // ban resizing 
             this.config = config;
             currentPage = new MainOptionsPage();        // create MainOptionsPage and set to current page
             OptionsFrame_Frm.Navigate(currentPage);     // navigate frame to current page
