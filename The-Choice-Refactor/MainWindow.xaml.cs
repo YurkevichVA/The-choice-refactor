@@ -44,12 +44,14 @@ namespace The_Choice_Refactor
 
         private void MetalPage_Btn_Click(object sender, RoutedEventArgs e)
         {
-            // to implement
+            currentPage = new MetalPage();
+            PageFrame_Frm.Navigate(currentPage);
         }
 
         private void SharePage_Btn_Click(object sender, RoutedEventArgs e)
         {
-            // to implement
+            currentPage = new SharePage();
+            PageFrame_Frm.Navigate(currentPage);
         }
 
         private void Options_Btn_Click(object sender, RoutedEventArgs e)

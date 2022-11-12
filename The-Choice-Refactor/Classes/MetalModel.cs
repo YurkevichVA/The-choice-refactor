@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace The_Choice_Refactor.Classes
+﻿namespace The_Choice_Refactor.Classes
 {
-    internal class MetalModel
+    public class MetalModel
     {
+        public int number { get; set; }
+        public string? name { get; set; }
+        public double price { get; set; }
+        public bool isFavorite { get; set; }
     }
 }

@@ -5,12 +5,14 @@ using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.IO;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace The_Choice_Refactor.Classes
 {
-    public class MetalVM
+    public class MetalFavoriteVM
     {
-        public ObservableCollection<MetalModel> metals { get; set; }    // all metals collection
+        public ObservableCollection<MetalModel> metals { get; set; }    // favorites metals collection
         private MetalModel? selected;                                  // selected metal
         public MetalModel? Selected
         {
@@ -21,7 +23,7 @@ namespace The_Choice_Refactor.Classes
                 OnPropertyChanged("Selected");
             }
         }
-        public MetalVM()
+        public MetalFavoriteVM()
         {
             metals = new ObservableCollection<MetalModel>();
             Load();
@@ -35,14 +37,15 @@ namespace The_Choice_Refactor.Classes
 
             int i = 0;
 
-            foreach(var res in result)
+            foreach (var res in result)
             {
+                i++;
+                if (!favoritesIDs.Contains(res.Key)) continue;
                 MetalModel metal = new MetalModel();
                 metal.number = i + 1;
                 metal.name = res.Key;
                 metal.price = res.Value;
                 metal.isFavorite = favoritesIDs.Contains(res.Key);
-                i++;
                 metals.Add(metal);
             }
 
@@ -50,12 +53,13 @@ namespace The_Choice_Refactor.Classes
 
             foreach (var res in result)
             {
+                i++;
+                if (!favoritesIDs.Contains(res.Key)) continue;
                 MetalModel metal = new MetalModel();
                 metal.number = i + 1;
                 metal.name = res.Key;
                 metal.price = res.Value;
                 metal.isFavorite = favoritesIDs.Contains(res.Key);
-                i++;
                 metals.Add(metal);
             }
         }
