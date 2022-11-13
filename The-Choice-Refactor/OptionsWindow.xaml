@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:The_Choice_Refactor"
         mc:Ignorable="d"
-        Title="OptionsWindow" Height="600" Width="1000">
+        Title="OptionsWindow" Height="600" Width="1000" Background="#0e1122">
     <Window.Resources>
-        <ResourceDictionary Source="\Resources\Styles\Styles.xaml"></ResourceDictionary>
+        <ResourceDictionary Source="Resources\Styles\Styles.xaml"></ResourceDictionary>
     </Window.Resources>
     <Grid>
-        <StackPanel Height="600" Width="1000" Background="#0e1122">
+        <StackPanel Height="600" Width="1000">
             <Grid Height="600" Width="1000">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30*"/>
@@ -81,17 +81,17 @@
                             Grid.Row="1"
                             Grid.Column="1"
                             Height="19"
-                            Source="\..\..\Resources\Pictures\Icons\MainIcon.png"/>
+                            Source="..\..\Resources\Pictures\Icons\MainIcon.png"/>
                         <Image
                             Grid.Row="2"
                             Grid.Column="1"
                             Height="19"
-                            Source="\..\..\Resources\Pictures\Icons\TutorIcon.png"/>
+                            Source="..\..\Resources\Pictures\Icons\TutorIcon.png"/>
                         <Image
                             Grid.Row="3"
                             Grid.Column="1"
                             Height="19"
-                            Source="\..\..\Resources\Pictures\Icons\AboutUsIcon.png"/>
+                            Source="..\..\Resources\Pictures\Icons\AboutUsIcon.png"/>
                     </Grid>
                 </Border>
                 <Frame 

@@ -92,7 +92,8 @@
                     HorizontalAlignment="Left">
                     <CheckBox 
                         x:Name="themeSwitch_ChBx"
-                        Style="{StaticResource switchThemeTemplate}" 
+                        Style="{StaticResource switchThemeTemplate}"
+                        IsChecked="{Binding Path=DarkTheme}"
                         Checked="themeSwitch_ChBx_Checked"
                         Unchecked="themeSwitch_ChBx_Unchecked"/>
                 </Border>

@@ -13,7 +13,7 @@
     <Window.Resources>
         <ResourceDictionary Source="Resources\Styles\Styles.xaml"></ResourceDictionary>
     </Window.Resources>
-    <Grid>
+    <Grid x:Name="MainGrid_Grd">
         <Grid.Background>
             <ImageBrush ImageSource="Resources\Pictures\LinesBackgroundDark.png"/>
         </Grid.Background>

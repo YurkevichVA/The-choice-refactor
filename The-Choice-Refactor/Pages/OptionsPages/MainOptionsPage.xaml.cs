@@ -1,17 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Newtonsoft.Json;
+using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
+using The_Choice_Refactor.Classes;
+using System.IO;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace The_Choice_Refactor.Pages.OptionsPages
 {
@@ -20,19 +13,24 @@ namespace The_Choice_Refactor.Pages.OptionsPages
     /// </summary>
     public partial class MainOptionsPage : Page
     {
-        public MainOptionsPage()
+        OptionsWindow parent;
+        public MainOptionsPage(Config config, OptionsWindow parent)
         {
             InitializeComponent();
+            DataContext = config;
+            this.parent = parent;
         }
 
         private void themeSwitch_ChBx_Checked(object sender, RoutedEventArgs e)
         {
-
+            File.WriteAllText(@"..\..\..\UserData\Configuration.json", JsonConvert.SerializeObject(DataContext as Config));
+            parent.SetConfig();
         }
 
         private void themeSwitch_ChBx_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            File.WriteAllText(@"..\..\..\UserData\Configuration.json", JsonConvert.SerializeObject(DataContext as Config));
+            parent.SetConfig();
         }
     }
 }
