@@ -35,18 +35,24 @@ namespace The_Choice_Refactor.Pages.ListBoxPages
         private void favorite_ChBx_Checked(object sender, RoutedEventArgs e)
         {
             CurrencyModel? newFavorite = ((CheckBox)sender).DataContext as CurrencyModel;
-            StreamWriter writer = new StreamWriter(@"..\..\..\UserData\Favorites\FavoriteCurrencies.txt", true);
-            writer.WriteLine(newFavorite.name + ";");
-            writer.Close();
+            if (newFavorite != null)
+            {
+                StreamWriter writer = new StreamWriter(@"..\..\..\UserData\Favorites\FavoriteCurrencies.txt", true);
+                writer.WriteLine(newFavorite.name + ";");
+                writer.Close();
+            }
         }
 
         private void favorite_ChBx_Unchecked(object sender, RoutedEventArgs e)
         {
             CurrencyModel? removedFavorite = ((CheckBox)sender).DataContext as CurrencyModel;
-            string temp = File.ReadAllText(@"..\..\..\UserData\Favorites\FavoriteCurrencies.txt");
-            StreamWriter writer = new StreamWriter(@"..\..\..\UserData\Favorites\FavoriteCurrencies.txt");
-            writer.Write(temp.Replace(removedFavorite.name + ";\r\n", ""));
-            writer.Close();
+            if (removedFavorite != null)
+            {
+                string temp = File.ReadAllText(@"..\..\..\UserData\Favorites\FavoriteCurrencies.txt");
+                StreamWriter writer = new StreamWriter(@"..\..\..\UserData\Favorites\FavoriteCurrencies.txt");
+                writer.Write(temp.Replace(removedFavorite.name + ";\r\n", ""));
+                writer.Close();
+            }
         }
     }
 }

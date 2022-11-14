@@ -22,18 +22,24 @@ namespace The_Choice_Refactor.Pages.ListBoxPages
         private void favorite_ChBx_Checked(object sender, RoutedEventArgs e)
         {
             MetalModel? newFavorite = ((CheckBox)sender).DataContext as MetalModel;
-            StreamWriter writer = new StreamWriter(@"..\..\..\UserData\Favorites\FavoriteMetals.txt", true);
-            writer.WriteLine(newFavorite.name + ";");
-            writer.Close();
+            if (newFavorite != null)
+            {
+                StreamWriter writer = new StreamWriter(@"..\..\..\UserData\Favorites\FavoriteMetals.txt", true);
+                writer.WriteLine(newFavorite.name + ";");
+                writer.Close();
+            }
         }
 
         private void favorite_ChBx_Unchecked(object sender, RoutedEventArgs e)
         {
             MetalModel? removedFavorite = ((CheckBox)sender).DataContext as MetalModel;
-            string temp = File.ReadAllText(@"..\..\..\UserData\Favorites\FavoriteMetals.txt");
-            StreamWriter writer = new StreamWriter(@"..\..\..\UserData\Favorites\FavoriteMetals.txt");
-            writer.Write(temp.Replace(removedFavorite.name + ";\r\n", ""));
-            writer.Close();
+            if (removedFavorite != null)
+            {
+                string temp = File.ReadAllText(@"..\..\..\UserData\Favorites\FavoriteMetals.txt");
+                StreamWriter writer = new StreamWriter(@"..\..\..\UserData\Favorites\FavoriteMetals.txt");
+                writer.Write(temp.Replace(removedFavorite.name + ";\r\n", ""));
+                writer.Close();
+            }
         }
     }
 }

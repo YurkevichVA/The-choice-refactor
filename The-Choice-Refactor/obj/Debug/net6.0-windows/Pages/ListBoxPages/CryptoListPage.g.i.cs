@@ -61,7 +61,7 @@ namespace The_Choice_Refactor.Pages.ListBoxPages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/The-Choice-Refactor;V1.0.0.0;component/pages/listboxpages/cryptolistpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/The-Choice-Refactor;component/pages/listboxpages/cryptolistpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Pages\ListBoxPages\CryptoListPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

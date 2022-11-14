@@ -56,5 +56,3 @@ C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Re
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\ListBoxPages\CurrencyListPage.baml
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\ListBoxPages\MetalListPage.baml
 C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\Pages\ListBoxPages\ShareListPage.baml
-C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\remove_lbeffects_temp.g.cs
-C:\Users\ovsan\Desktop\University\PMEssentials\The-Choice-Refactor\The-Choice-Refactor\obj\Debug\net6.0-windows\remove_lbeffects_temp.baml

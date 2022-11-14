@@ -23,18 +23,24 @@ namespace The_Choice_Refactor.Pages.ListBoxPages
         private void favorite_ChBx_Checked(object sender, RoutedEventArgs e)
         {
             ShareModel? newFavorite = ((CheckBox)sender).DataContext as ShareModel;
-            StreamWriter writer = new StreamWriter(@"..\..\..\UserData\Favorites\FavoriteShares.txt", true);
-            writer.WriteLine(newFavorite.symbol + ";");
-            writer.Close();
+            if (newFavorite != null)
+            {
+                StreamWriter writer = new StreamWriter(@"..\..\..\UserData\Favorites\FavoriteShares.txt", true);
+                writer.WriteLine(newFavorite.symbol + ";");
+                writer.Close();
+            }
         }
 
         private void favorite_ChBx_Unchecked(object sender, RoutedEventArgs e)
         {
             ShareModel? removedFavorite = ((CheckBox)sender).DataContext as ShareModel;
-            string temp = File.ReadAllText(@"..\..\..\UserData\Favorites\FavoriteShares.txt");
-            StreamWriter writer = new StreamWriter(@"..\..\..\UserData\Favorites\FavoriteShares.txt");
-            writer.Write(temp.Replace(removedFavorite.symbol + ";\r\n", ""));
-            writer.Close();
+            if (removedFavorite != null)
+            {
+                string temp = File.ReadAllText(@"..\..\..\UserData\Favorites\FavoriteShares.txt");
+                StreamWriter writer = new StreamWriter(@"..\..\..\UserData\Favorites\FavoriteShares.txt");
+                writer.Write(temp.Replace(removedFavorite.symbol + ";\r\n", ""));
+                writer.Close();
+            }
         }
     }
 }
