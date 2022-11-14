@@ -12,6 +12,12 @@
         <Setter Property="Foreground" 
                 Value="White"/>
     </Style>
+    <Style TargetType="TextBox">
+        <Setter Property="FontFamily" 
+                Value="SF UI Display"/>
+        <Setter Property="Foreground" 
+                Value="White"/>
+    </Style>
     <Style TargetType="Button">
         <Setter Property="Background"
                 Value="Transparent">

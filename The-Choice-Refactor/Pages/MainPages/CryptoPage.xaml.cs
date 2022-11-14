@@ -21,12 +21,26 @@ namespace The_Choice_Refactor.Pages.MainPages
 
         private void favoriteMode_ChBx_Checked(object sender, RoutedEventArgs e)
         {
-            _list.DataContext = new CryptoFavoriteVM();
+            if (search_TxtBlck.Text.Length == 0)
+                _list.DataContext = new CryptoFavoriteVM();
+            else
+                _list.DataContext = new CryptoSearchVM(search_TxtBlck.Text, favoriteMode_ChBx.IsChecked);
         }
 
         private void favoriteMode_ChBx_Unchecked(object sender, RoutedEventArgs e)
         {
-            _list.DataContext = new CryptoVM();
+            if (search_TxtBlck.Text.Length == 0)
+                _list.DataContext = new CryptoVM();
+            else
+                _list.DataContext = new CryptoSearchVM(search_TxtBlck.Text, favoriteMode_ChBx.IsChecked);
+        }
+
+        private void search_TxtBlck_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if(search_TxtBlck.Text.Length == 0)
+                _list.DataContext = new CryptoVM();
+            else
+                _list.DataContext = new CryptoSearchVM(search_TxtBlck.Text, favoriteMode_ChBx.IsChecked);
         }
     }
 }

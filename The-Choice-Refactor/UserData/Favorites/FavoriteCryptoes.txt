@@ -1,3 +1,4 @@
 USDT;
 BTC;
 BUSD;
+ETH;
