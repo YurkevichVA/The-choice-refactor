@@ -46,9 +46,6 @@
     <Compile Update="Pages\OptionsPages\TutorialPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="remove_lbeffects_temp.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
@@ -91,9 +88,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\OptionsPages\TutorialPage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="remove_lbeffects_temp.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Resources\Styles\Styles.xaml">
