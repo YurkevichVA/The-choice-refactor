@@ -1,18 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using The_Choice_Refactor.Classes;
 using The_Choice_Refactor.Pages.ListBoxPages;
 
@@ -33,11 +20,30 @@ namespace The_Choice_Refactor.Pages.MainPages
         }
         private void favoriteMode_ChBx_Checked(object sender, RoutedEventArgs e)
         {
-            _list.DataContext = new CurrencyFavoriteVM();
+            if (search_TxtBlck.Text.Length == 0)
+                _list.DataContext = new CurrencyFavoriteVM();
+            else
+                _list.DataContext = new CurrencySearchVM(search_TxtBlck.Text, favoriteMode_ChBx.IsChecked);
         }
         private void favoriteMode_ChBx_Unchecked(object sender, RoutedEventArgs e)
         {
-            _list.DataContext = new CurrencyVM();
+            if (search_TxtBlck.Text.Length == 0)
+                _list.DataContext = new CurrencyVM();
+            else
+                _list.DataContext = new CurrencySearchVM(search_TxtBlck.Text, favoriteMode_ChBx.IsChecked);
+        }
+
+        private void search_TxtBlck_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (search_TxtBlck.Text.Length == 0)
+            {
+                if (favoriteMode_ChBx.IsChecked == true)
+                    _list.DataContext = new CurrencyFavoriteVM();
+                else
+                    _list.DataContext = new CurrencyVM();
+            }
+            else
+                _list.DataContext = new CurrencySearchVM(search_TxtBlck.Text, favoriteMode_ChBx.IsChecked);
         }
     }
 }
