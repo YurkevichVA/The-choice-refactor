@@ -20,12 +20,31 @@ namespace The_Choice_Refactor.Pages.MainPages
         }
         private void favoriteMode_ChBx_Checked(object sender, RoutedEventArgs e)
         {
-            _list.DataContext = new MetalFavoriteVM();
+            if (search_TxtBlck.Text.Length == 0)
+                _list.DataContext = new MetalFavoriteVM();
+            else
+                _list.DataContext = new MetalSearchVM(search_TxtBlck.Text, favoriteMode_ChBx.IsChecked);
         }
 
         private void favoriteMode_ChBx_Unchecked(object sender, RoutedEventArgs e)
         {
-            _list.DataContext = new MetalVM();
+            if (search_TxtBlck.Text.Length == 0)
+                _list.DataContext = new MetalVM();
+            else
+                _list.DataContext = new MetalSearchVM(search_TxtBlck.Text, favoriteMode_ChBx.IsChecked);
+        }
+
+        private void search_TxtBlck_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (search_TxtBlck.Text.Length == 0)
+            {
+                if (favoriteMode_ChBx.IsChecked == true)
+                    _list.DataContext = new MetalFavoriteVM();
+                else
+                    _list.DataContext = new MetalVM();
+            }
+            else
+                _list.DataContext = new MetalSearchVM(search_TxtBlck.Text, favoriteMode_ChBx.IsChecked);
         }
     }
 }

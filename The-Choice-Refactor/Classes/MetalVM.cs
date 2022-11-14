@@ -8,7 +8,7 @@ using System.IO;
 
 namespace The_Choice_Refactor.Classes
 {
-    public class MetalVM
+    public class MetalVM: INotifyPropertyChanged
     {
         public ObservableCollection<MetalModel> metals { get; set; }    // all metals collection
         private MetalModel? selected;                                  // selected metal
