@@ -8,7 +8,7 @@ using System.Net.Http;
 
 namespace The_Choice_Refactor.Classes
 {
-    public class ShareVM
+    public class ShareVM: INotifyPropertyChanged
     {
         public ObservableCollection<ShareModel> shares { get; set; }    // all shares collection
         private ShareModel? selected;                                   // selected share
